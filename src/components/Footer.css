@@ -1,0 +1,49 @@
+.footer {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.footer-copyright {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.footer-made-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.heart-icon {
+    color: #ef4444;
+    /* red */
+    fill: #ef4444;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

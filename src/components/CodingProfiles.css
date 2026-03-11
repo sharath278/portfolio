@@ -1,0 +1,194 @@
+.profiles-section {
+    background-color: var(--bg-color);
+    /* Alternating background color from skills section */
+}
+
+.profiles-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+}
+
+.profiles-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* DSA Summary Area */
+.dsa-summary {
+    padding: 3rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(145deg, var(--card-bg) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.dsa-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.accent-icon {
+    color: var(--primary-color);
+}
+
+.dsa-summary h3 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+}
+
+.dsa-summary p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.dsa-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 1rem;
+    color: var(--primary-color);
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem 0;
+    color: var(--text-primary);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Platforms Grid */
+.platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.platform-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.platform-card.leetcode {
+    border-color: rgba(255, 161, 22, 0.3);
+}
+
+.platform-card.leetcode:hover {
+    border-color: #ffa116;
+    box-shadow: 0 10px 30px -10px rgba(255, 161, 22, 0.25);
+}
+
+.platform-card.leetcode .platform-icon {
+    color: #ffa116;
+    background: rgba(255, 161, 22, 0.1);
+}
+
+.platform-card.gfg {
+    border-color: rgba(47, 141, 70, 0.3);
+}
+
+.platform-card.gfg:hover {
+    border-color: #2f8d46;
+    box-shadow: 0 10px 30px -10px rgba(47, 141, 70, 0.25);
+}
+
+.platform-card.gfg .platform-icon {
+    color: #2f8d46;
+    background: rgba(47, 141, 70, 0.1);
+}
+
+.platform-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+.platform-icon.locked {
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+}
+
+.platform-info h4 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.platform-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.view-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .platforms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dsa-summary {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dsa-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .view-profile {
+        justify-content: center;
+    }
+}
