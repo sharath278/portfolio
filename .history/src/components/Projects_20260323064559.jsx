@@ -9,16 +9,16 @@ const Projects = () => {
             title: 'MediConnect',
             description: 'A full-stack healthcare platform where patients can connect with doctors, book appointments, and manage medical information. Focused on improving accessibility to healthcare through a modern web interface.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-            github: '#',
-            live: '#'
+            github: 'https://github.com/sharath278/wander_lust',
+            live: ''
         },
         {
             id: 2,
             title: 'Wanderlust',
             description: 'A comprehensive travel and accommodation platform. Features include browsing destinations, viewing dynamic listings, and managing travel stays, demonstrating strong full-stack skills.',
             tech: ['HTML', 'CSS', 'Bootstrap', 'Node.js', 'MongoDB'],
-            github: 'https://github.com/sharath278/wander_lust',
-            live: 'https://wander-lust-ztxk.onrender.com'
+            github: '#',
+            live: '#'
         }
     ];
 
