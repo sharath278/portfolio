@@ -10,7 +10,7 @@ const Projects = () => {
             description: 'A full-stack healthcare platform where patients can connect with doctors, book appointments, and manage medical information. Focused on improving accessibility to healthcare through a modern web interface.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
             github: 'https://github.com/shiva23187/medi-connect/',
-            live: 'https://medi-connect-ofosq1iez-shiva23187s-projects.vercel.app/'
+            live: ''
         },
         {
             id: 2,
